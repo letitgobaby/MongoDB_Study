@@ -10,11 +10,11 @@ services:
     volumes:
       - ./mongo_a/data:/data/db
       - ./setupFile/mongod.conf:/etc/mongod.conf.orig
-      - ./mongo_a/log/mongod.log:/home/mongodb/db/log/mongod.log
+      - ./mongo_a/log/:/var/log/mongodb/
     networks:
       - mongo-cluster
     restart: on-failure
-    command: mongod --replSet replSetTest
+    command: mongod --replSet replSetTest --logpath /var/log/mongodb/mongod.log
 
 
   mongo_b:
@@ -25,11 +25,11 @@ services:
     volumes:
       - ./mongo_b/data:/data/db
       - ./setupFile/mongod.conf:/etc/mongod.conf.orig
-      - ./mongo_b/log/mongod.log:/home/mongodb/db/log/mongod.log
+      - ./mongo_b/log/:/var/log/mongodb/
     networks:
       - mongo-cluster
     restart: on-failure
-    command: mongod --replSet replSetTest
+    command: mongod --replSet replSetTest --logpath /var/log/mongodb/mongod.log
     depends_on:
       - mongo_a
 
@@ -42,11 +42,11 @@ services:
     volumes:
       - ./mongo_c/data:/data/db
       - ./setupFile/mongod.conf:/etc/mongod.conf.orig
-      - ./mongo_c/log/mongod.log:/home/mongodb/db/log/mongod.log
+      - ./mongo_c/log/:/var/log/mongodb/
     networks:
       - mongo-cluster
     restart: on-failure
-    command: mongod --replSet replSetTest
+    command: mongod --replSet replSetTest --logpath /var/log/mongodb/mongod.log
     depends_on:
       - mongo_b
 

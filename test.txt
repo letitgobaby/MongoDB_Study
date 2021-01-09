@@ -1,9 +1,0 @@
-use test
-
-db.testcollection.insert({ name: letitgobaby, job: developer });
-
-db.testcollection.find({});
-
-
-
-rs.secondaryOk()

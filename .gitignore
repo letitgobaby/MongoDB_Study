@@ -1,0 +1,9 @@
+
+mongo_a/data/*
+mongo_b/data/*
+mongo_c/data/*
+
+
+mongo_a/log/*
+mongo_b/log/*
+mongo_c/log/*
