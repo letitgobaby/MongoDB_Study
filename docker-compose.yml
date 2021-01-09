@@ -1,0 +1,67 @@
+version: '3'
+
+services:
+
+  mongo_a:
+    image: mongo:4.2
+    container_name: mongo_a
+    ports:
+      - "30001:27017"
+    volumes:
+      - ./mongo_a/data:/data/db
+      - ./setupFile/mongod.conf:/etc/mongod.conf.orig
+      - ./mongo_a/log/mongod.log:/home/mongodb/db/log/mongod.log
+    networks:
+      - mongo-cluster
+    restart: on-failure
+    command: mongod --replSet replSetTest
+
+
+  mongo_b:
+    image: mongo:4.2
+    container_name: mongo_b
+    ports:
+      - "30002:27017"
+    volumes:
+      - ./mongo_b/data:/data/db
+      - ./setupFile/mongod.conf:/etc/mongod.conf.orig
+      - ./mongo_b/log/mongod.log:/home/mongodb/db/log/mongod.log
+    networks:
+      - mongo-cluster
+    restart: on-failure
+    command: mongod --replSet replSetTest
+    depends_on:
+      - mongo_a
+
+
+  mongo_c:
+    image: mongo:4.2
+    container_name: mongo_c
+    ports:
+      - "30003:27017"
+    volumes:
+      - ./mongo_c/data:/data/db
+      - ./setupFile/mongod.conf:/etc/mongod.conf.orig
+      - ./mongo_c/log/mongod.log:/home/mongodb/db/log/mongod.log
+    networks:
+      - mongo-cluster
+    restart: on-failure
+    command: mongod --replSet replSetTest
+    depends_on:
+      - mongo_b
+
+
+  # for ReplicaSet Setting
+  setup_container:
+    # image: "setup_container"
+    build:
+      context: .
+      dockerfile: ./Dockerfile
+    depends_on:
+      - mongo_c
+    networks:
+      - mongo-cluster
+
+networks:
+  mongo-cluster:
+    driver: bridge

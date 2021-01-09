@@ -1,0 +1,1 @@
+rs.add( { host: "mongo3:27017", arbiterOnly: true } )
