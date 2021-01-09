@@ -1,0 +1,126 @@
+2021-01-09T10:17:36.338+0000 I  CONTROL  [main] Automatically disabling TLS 1.0, to force-enable TLS 1.0 specify --sslDisabledProtocols 'none'
+2021-01-09T10:17:36.346+0000 W  ASIO     [main] No TransportLayer configured during NetworkInterface startup
+2021-01-09T10:17:36.348+0000 I  CONTROL  [initandlisten] MongoDB starting : pid=1 port=27017 dbpath=/data/db 64-bit host=36f0ad96fb85
+2021-01-09T10:17:36.348+0000 I  CONTROL  [initandlisten] db version v4.2.11
+2021-01-09T10:17:36.353+0000 I  CONTROL  [initandlisten] git version: ea38428f0c6742c7c2c7f677e73d79e17a2aab96
+2021-01-09T10:17:36.356+0000 I  CONTROL  [initandlisten] OpenSSL version: OpenSSL 1.1.1  11 Sep 2018
+2021-01-09T10:17:36.356+0000 I  CONTROL  [initandlisten] allocator: tcmalloc
+2021-01-09T10:17:36.357+0000 I  CONTROL  [initandlisten] modules: none
+2021-01-09T10:17:36.357+0000 I  CONTROL  [initandlisten] build environment:
+2021-01-09T10:17:36.357+0000 I  CONTROL  [initandlisten]     distmod: ubuntu1804
+2021-01-09T10:17:36.358+0000 I  CONTROL  [initandlisten]     distarch: x86_64
+2021-01-09T10:17:36.358+0000 I  CONTROL  [initandlisten]     target_arch: x86_64
+2021-01-09T10:17:36.358+0000 I  CONTROL  [initandlisten] options: { net: { bindIp: "*" }, replication: { replSet: "replSetTest" }, systemLog: { destination: "file", path: "/var/log/mongodb/mongod.log" } }
+2021-01-09T10:17:36.401+0000 I  STORAGE  [initandlisten] wiredtiger_open config: create,cache_size=483M,cache_overflow=(file_max=0M),session_max=33000,eviction=(threads_min=4,threads_max=4),config_base=false,statistics=(fast),log=(enabled=true,archive=true,path=journal,compressor=snappy),file_manager=(close_idle_time=100000,close_scan_interval=10,close_handle_minimum=250),statistics_log=(wait=0),verbose=[recovery_progress,checkpoint_progress],
+2021-01-09T10:17:44.107+0000 I  STORAGE  [initandlisten] WiredTiger message [1610187464:107121][1:0x7fa5f26dfb00], txn-recover: Set global recovery timestamp: (0, 0)
+2021-01-09T10:17:44.117+0000 I  RECOVERY [initandlisten] WiredTiger recoveryTimestamp. Ts: Timestamp(0, 0)
+2021-01-09T10:17:44.128+0000 I  STORAGE  [initandlisten] No table logging settings modifications are required for existing WiredTiger tables. Logging enabled? 0
+2021-01-09T10:17:44.129+0000 I  STORAGE  [initandlisten] Timestamp monitor starting
+2021-01-09T10:17:44.134+0000 I  CONTROL  [initandlisten] 
+2021-01-09T10:17:44.135+0000 I  CONTROL  [initandlisten] ** WARNING: Access control is not enabled for the database.
+2021-01-09T10:17:44.135+0000 I  CONTROL  [initandlisten] **          Read and write access to data and configuration is unrestricted.
+2021-01-09T10:17:44.135+0000 I  CONTROL  [initandlisten] 
+2021-01-09T10:17:44.139+0000 I  SHARDING [initandlisten] Marking collection local.system.replset as collection version: <unsharded>
+2021-01-09T10:17:44.139+0000 I  STORAGE  [initandlisten] Flow Control is enabled on this deployment.
+2021-01-09T10:17:44.140+0000 I  SHARDING [initandlisten] Marking collection admin.system.roles as collection version: <unsharded>
+2021-01-09T10:17:44.140+0000 I  SHARDING [initandlisten] Marking collection admin.system.version as collection version: <unsharded>
+2021-01-09T10:17:44.141+0000 I  STORAGE  [initandlisten] createCollection: local.startup_log with generated UUID: df08a20d-f529-4446-883a-9e7e108a8124 and options: { capped: true, size: 10485760 }
+2021-01-09T10:17:44.152+0000 I  INDEX    [initandlisten] index build: done building index _id_ on ns local.startup_log
+2021-01-09T10:17:44.153+0000 I  SHARDING [initandlisten] Marking collection local.startup_log as collection version: <unsharded>
+2021-01-09T10:17:44.154+0000 I  FTDC     [initandlisten] Initializing full-time diagnostic data capture with directory '/data/db/diagnostic.data'
+2021-01-09T10:17:44.156+0000 I  STORAGE  [initandlisten] createCollection: local.replset.oplogTruncateAfterPoint with generated UUID: 6b0b8835-9206-4235-b1a5-941fc55c7005 and options: {}
+2021-01-09T10:17:44.172+0000 I  INDEX    [initandlisten] index build: done building index _id_ on ns local.replset.oplogTruncateAfterPoint
+2021-01-09T10:17:44.173+0000 I  STORAGE  [initandlisten] createCollection: local.replset.minvalid with generated UUID: d0e3779f-fefc-44a5-b9e8-f844b1de4a5b and options: {}
+2021-01-09T10:17:44.185+0000 I  INDEX    [initandlisten] index build: done building index _id_ on ns local.replset.minvalid
+2021-01-09T10:17:44.186+0000 I  SHARDING [initandlisten] Marking collection local.replset.minvalid as collection version: <unsharded>
+2021-01-09T10:17:44.186+0000 I  STORAGE  [initandlisten] createCollection: local.replset.election with generated UUID: e92d4966-52b8-4e5f-a47e-eee46362c0d8 and options: {}
+2021-01-09T10:17:44.194+0000 I  INDEX    [initandlisten] index build: done building index _id_ on ns local.replset.election
+2021-01-09T10:17:44.195+0000 I  SHARDING [initandlisten] Marking collection local.replset.election as collection version: <unsharded>
+2021-01-09T10:17:44.195+0000 I  REPL     [initandlisten] Did not find local initialized voted for document at startup.
+2021-01-09T10:17:44.195+0000 I  REPL     [initandlisten] Did not find local Rollback ID document at startup. Creating one.
+2021-01-09T10:17:44.196+0000 I  STORAGE  [initandlisten] createCollection: local.system.rollback.id with generated UUID: a1300a84-7f6f-43d5-a035-3ef60895645b and options: {}
+2021-01-09T10:17:44.204+0000 I  INDEX    [initandlisten] index build: done building index _id_ on ns local.system.rollback.id
+2021-01-09T10:17:44.204+0000 I  SHARDING [initandlisten] Marking collection local.system.rollback.id as collection version: <unsharded>
+2021-01-09T10:17:44.204+0000 I  REPL     [initandlisten] Initialized the rollback ID to 1
+2021-01-09T10:17:44.205+0000 I  REPL     [initandlisten] Did not find local replica set configuration document at startup;  NoMatchingDocument: Did not find replica set configuration document in local.system.replset
+2021-01-09T10:17:44.206+0000 I  CONTROL  [LogicalSessionCacheRefresh] Sessions collection is not set up; waiting until next sessions refresh interval: Replication has not yet been configured
+2021-01-09T10:17:44.206+0000 I  SHARDING [LogicalSessionCacheReap] Marking collection config.system.sessions as collection version: <unsharded>
+2021-01-09T10:17:44.207+0000 I  CONTROL  [LogicalSessionCacheReap] Sessions collection is not set up; waiting until next sessions reap interval: config.system.sessions does not exist
+2021-01-09T10:17:44.206+0000 I  NETWORK  [listener] Listening on /tmp/mongodb-27017.sock
+2021-01-09T10:17:44.207+0000 I  NETWORK  [listener] Listening on 0.0.0.0
+2021-01-09T10:17:44.208+0000 I  NETWORK  [listener] waiting for connections on port 27017
+2021-01-09T10:17:45.007+0000 I  SHARDING [ftdc] Marking collection local.oplog.rs as collection version: <unsharded>
+2021-01-09T10:17:46.904+0000 I  NETWORK  [listener] connection accepted from 172.27.0.2:33170 #1 (1 connection now open)
+2021-01-09T10:17:46.905+0000 I  NETWORK  [conn1] end connection 172.27.0.2:33170 (0 connections now open)
+2021-01-09T10:17:46.908+0000 I  NETWORK  [listener] connection accepted from 172.27.0.2:33174 #2 (1 connection now open)
+2021-01-09T10:17:46.909+0000 I  NETWORK  [conn2] received client metadata from 172.27.0.2:33174 conn2: { driver: { name: "NetworkInterfaceTL", version: "4.2.11" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "18.04" } }
+2021-01-09T10:17:46.910+0000 I  CONNPOOL [Replication] Connecting to mongo_a:27017
+2021-01-09T10:17:47.420+0000 I  NETWORK  [listener] connection accepted from 172.27.0.3:56122 #5 (2 connections now open)
+2021-01-09T10:17:47.422+0000 I  NETWORK  [conn5] end connection 172.27.0.3:56122 (1 connection now open)
+2021-01-09T10:17:47.423+0000 I  STORAGE  [replexec-0] createCollection: local.system.replset with generated UUID: b25dbc9a-7148-41b3-a49d-e74fcc7f0ef1 and options: {}
+2021-01-09T10:17:47.439+0000 I  NETWORK  [listener] connection accepted from 172.27.0.3:56126 #7 (2 connections now open)
+2021-01-09T10:17:47.439+0000 I  INDEX    [replexec-0] index build: done building index _id_ on ns local.system.replset
+2021-01-09T10:17:47.439+0000 I  NETWORK  [conn7] received client metadata from 172.27.0.3:56126 conn7: { driver: { name: "NetworkInterfaceTL", version: "4.2.11" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "18.04" } }
+2021-01-09T10:17:47.440+0000 I  REPL     [replexec-0] Stopping key manager
+2021-01-09T10:17:47.441+0000 I  CONNPOOL [Replication] Connecting to mongo_b:27017
+2021-01-09T10:17:47.441+0000 I  REPL     [replexec-0] New replica set config in use: { _id: "replSetTest", version: 1, protocolVersion: 1, writeConcernMajorityJournalDefault: true, members: [ { _id: 0, host: "mongo_a:27017", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 2.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 1, host: "mongo_b:27017", arbiterOnly: false, buildIndexes: true, hidden: false, priority: 1.0, tags: {}, slaveDelay: 0, votes: 1 }, { _id: 2, host: "mongo_c:27017", arbiterOnly: true, buildIndexes: true, hidden: false, priority: 0.0, tags: {}, slaveDelay: 0, votes: 1 } ], settings: { chainingAllowed: true, heartbeatIntervalMillis: 2000, heartbeatTimeoutSecs: 10, electionTimeoutMillis: 10000, catchUpTimeoutMillis: -1, catchUpTakeoverDelayMillis: 30000, getLastErrorModes: {}, getLastErrorDefaults: { w: 1, wtimeout: 0 }, replicaSetId: ObjectId('5ff982ca64b52bd54ab367dc') } }
+2021-01-09T10:17:47.441+0000 I  REPL     [replexec-0] This node is mongo_c:27017 in the config
+2021-01-09T10:17:47.442+0000 I  REPL     [replexec-0] transition to ARBITER from STARTUP
+2021-01-09T10:17:47.444+0000 I  REPL     [replexec-0] Member mongo_a:27017 is now in state SECONDARY
+2021-01-09T10:17:47.446+0000 I  REPL     [replexec-2] Member mongo_b:27017 is now in state STARTUP2
+2021-01-09T10:17:49.446+0000 I  REPL     [replexec-0] Member mongo_b:27017 is now in state SECONDARY
+2021-01-09T10:17:57.992+0000 I  ELECTION [conn2] Received vote request: { replSetRequestVotes: 1, setName: "replSetTest", dryRun: true, term: 0, candidateIndex: 0, configVersion: 1, lastCommittedOp: { ts: Timestamp(1610187466, 1), t: -1 } }
+2021-01-09T10:17:57.993+0000 I  ELECTION [conn2] Sending vote response: { term: 0, voteGranted: true, reason: "" }
+2021-01-09T10:17:57.993+0000 I  NETWORK  [conn2] end connection 172.27.0.2:33174 (1 connection now open)
+2021-01-09T10:17:57.995+0000 I  NETWORK  [listener] connection accepted from 172.27.0.2:33200 #10 (2 connections now open)
+2021-01-09T10:17:57.996+0000 I  NETWORK  [conn10] received client metadata from 172.27.0.2:33200 conn10: { driver: { name: "NetworkInterfaceTL", version: "4.2.11" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "18.04" } }
+2021-01-09T10:17:57.996+0000 I  ELECTION [conn10] Received vote request: { replSetRequestVotes: 1, setName: "replSetTest", dryRun: false, term: 1, candidateIndex: 0, configVersion: 1, lastCommittedOp: { ts: Timestamp(1610187466, 1), t: -1 } }
+2021-01-09T10:17:57.997+0000 I  ELECTION [conn10] Sending vote response: { term: 1, voteGranted: true, reason: "" }
+2021-01-09T10:17:57.999+0000 I  NETWORK  [conn10] end connection 172.27.0.2:33200 (1 connection now open)
+2021-01-09T10:17:58.000+0000 I  NETWORK  [listener] connection accepted from 172.27.0.2:33202 #11 (2 connections now open)
+2021-01-09T10:17:58.003+0000 I  NETWORK  [conn11] received client metadata from 172.27.0.2:33202 conn11: { driver: { name: "NetworkInterfaceTL", version: "4.2.11" }, os: { type: "Linux", name: "Ubuntu", architecture: "x86_64", version: "18.04" } }
+2021-01-09T10:17:59.445+0000 I  REPL     [replexec-4] Member mongo_a:27017 is now in state PRIMARY
+2021-01-09T10:18:47.445+0000 I  CONNPOOL [Replication] Ending idle connection to host mongo_b:27017 because the pool meets constraints; 1 connections to that host remain open
+2021-01-09T10:20:05.070+0000 I  CONTROL  [signalProcessingThread] got signal 15 (Terminated), will terminate after current cmd ends
+2021-01-09T10:20:05.070+0000 I  REPL     [signalProcessingThread] Stepping down the ReplicationCoordinator for shutdown, waitTime: 10000ms
+2021-01-09T10:20:05.070+0000 I  SHARDING [signalProcessingThread] Shutting down the WaitForMajorityService
+2021-01-09T10:20:05.071+0000 I  CONTROL  [signalProcessingThread] Shutting down the LogicalSessionCache
+2021-01-09T10:20:05.072+0000 I  NETWORK  [signalProcessingThread] shutdown: going to close listening sockets...
+2021-01-09T10:20:05.073+0000 I  NETWORK  [listener] removing socket file: /tmp/mongodb-27017.sock
+2021-01-09T10:20:05.074+0000 I  NETWORK  [signalProcessingThread] Shutting down the global connection pool
+2021-01-09T10:20:05.074+0000 I  STORAGE  [signalProcessingThread] Shutting down the FlowControlTicketholder
+2021-01-09T10:20:05.075+0000 I  -        [signalProcessingThread] Stopping further Flow Control ticket acquisitions.
+2021-01-09T10:20:05.075+0000 I  STORAGE  [signalProcessingThread] Shutting down the PeriodicThreadToAbortExpiredTransactions
+2021-01-09T10:20:05.076+0000 I  STORAGE  [signalProcessingThread] Shutting down the PeriodicThreadToDecreaseSnapshotHistoryIfNotNeeded
+2021-01-09T10:20:05.076+0000 I  REPL     [signalProcessingThread] Shutting down the ReplicationCoordinator
+2021-01-09T10:20:05.076+0000 I  REPL     [signalProcessingThread] shutting down replication subsystems
+2021-01-09T10:20:05.077+0000 I  ASIO     [Replication] Killing all outstanding egress activity.
+2021-01-09T10:20:05.078+0000 I  CONNPOOL [Replication] Dropping all pooled connections to mongo_a:27017 due to ShutdownInProgress: Shutting down the connection pool
+2021-01-09T10:20:05.079+0000 I  CONNPOOL [Replication] Dropping all pooled connections to mongo_b:27017 due to ShutdownInProgress: Shutting down the connection pool
+2021-01-09T10:20:05.079+0000 I  SHARDING [signalProcessingThread] Shutting down the ShardingInitializationMongoD
+2021-01-09T10:20:05.080+0000 I  REPL     [signalProcessingThread] Enqueuing the ReplicationStateTransitionLock for shutdown
+2021-01-09T10:20:05.080+0000 I  -        [signalProcessingThread] Killing all operations for shutdown
+2021-01-09T10:20:05.081+0000 I  COMMAND  [signalProcessingThread] Shutting down all open transactions
+2021-01-09T10:20:05.081+0000 I  REPL     [signalProcessingThread] Acquiring the ReplicationStateTransitionLock for shutdown
+2021-01-09T10:20:05.081+0000 I  INDEX    [signalProcessingThread] Shutting down the IndexBuildsCoordinator
+2021-01-09T10:20:05.081+0000 I  NETWORK  [signalProcessingThread] Shutting down the ReplicaSetMonitor
+2021-01-09T10:20:05.082+0000 I  REPL     [signalProcessingThread] Shutting down the LogicalTimeValidator
+2021-01-09T10:20:05.082+0000 I  CONTROL  [signalProcessingThread] Shutting down free monitoring
+2021-01-09T10:20:05.082+0000 I  CONTROL  [signalProcessingThread] Shutting down free monitoring
+2021-01-09T10:20:05.082+0000 I  FTDC     [signalProcessingThread] Shutting down full-time data capture
+2021-01-09T10:20:05.083+0000 I  FTDC     [signalProcessingThread] Shutting down full-time diagnostic data capture
+2021-01-09T10:20:05.087+0000 I  STORAGE  [signalProcessingThread] Shutting down the HealthLog
+2021-01-09T10:20:05.087+0000 I  STORAGE  [signalProcessingThread] Shutting down the storage engine
+2021-01-09T10:20:05.088+0000 I  STORAGE  [signalProcessingThread] Deregistering all the collections
+2021-01-09T10:20:05.088+0000 I  STORAGE  [signalProcessingThread] Timestamp monitor shutting down
+2021-01-09T10:20:05.088+0000 I  STORAGE  [signalProcessingThread] WiredTigerKVEngine shutting down
+2021-01-09T10:20:05.088+0000 I  STORAGE  [signalProcessingThread] Shutting down session sweeper thread
+2021-01-09T10:20:05.089+0000 I  STORAGE  [signalProcessingThread] Finished shutting down session sweeper thread
+2021-01-09T10:20:05.089+0000 I  STORAGE  [signalProcessingThread] Shutting down journal flusher thread
+2021-01-09T10:20:05.090+0000 I  STORAGE  [signalProcessingThread] Finished shutting down journal flusher thread
+2021-01-09T10:20:05.090+0000 I  STORAGE  [signalProcessingThread] Shutting down checkpoint thread
+2021-01-09T10:20:05.091+0000 I  STORAGE  [signalProcessingThread] Finished shutting down checkpoint thread
+2021-01-09T10:20:05.126+0000 I  STORAGE  [signalProcessingThread] shutdown: removing fs lock...
+2021-01-09T10:20:05.126+0000 I  -        [signalProcessingThread] Dropping the scope cache for shutdown
+2021-01-09T10:20:05.127+0000 I  CONTROL  [signalProcessingThread] now exiting
+2021-01-09T10:20:05.127+0000 I  CONTROL  [signalProcessingThread] shutting down with code:0
