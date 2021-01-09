@@ -21,8 +21,10 @@ docker exec -it mongo_a /bin/bash
 # in mongo_a Container
 mongo 
 
+# create database
 use test
 
+# create collection and insert document
 db.testcollection.insert({ name: letitgobaby, job: developer });
 
 db.testcollection.find({});
