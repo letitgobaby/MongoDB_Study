@@ -37,7 +37,8 @@ docker exec -it mongo_b /bin/bash
 # in mongo_a Container
 mongo
 
-rs.secondaryOk(); # allow secondary node to have READ auth
+# allow secondary node to have READ auth
+rs.secondaryOk(); 
 
 use test;
 
