@@ -2,6 +2,10 @@
 
 <br />
 
+![PSA](https://user-images.githubusercontent.com/48303144/104096228-9327ab80-52de-11eb-852b-8927793492f3.jpeg)
+
+<br />
+
 ### Prerequisites
 - You must have docker and docker-compose installed on your local computer.
 
