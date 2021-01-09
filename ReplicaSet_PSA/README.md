@@ -5,8 +5,12 @@
 ### Prerequisites
 - You must have docker and docker-compose installed on your local computer.
 
+<br />
+
 ### How to work
 - docker-compose up -d
+
+<br />
 
 ### Check your test results
 
