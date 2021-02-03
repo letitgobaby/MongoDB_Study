@@ -40,7 +40,7 @@ db.testcollection.find({});
 ```
 docker exec -it mongo_b /bin/bash
 
-# in mongo_a Container
+# in mongo_b Container
 mongo
 
 # allow secondary node to have READ auth
